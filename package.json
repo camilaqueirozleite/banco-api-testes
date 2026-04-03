@@ -4,19 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/**/*.test.js --timeout=200000" 
+    "test": "mocha ./test/**/*.test.js --reporter mochawesome --timeout=200000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "chai": "^6.2.2",
+    "chai": "^4.2.2",
     "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4",
     "supertest": "^7.2.2"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "devDependencies": {}
+  }
 }
+
+
