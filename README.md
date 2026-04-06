@@ -24,22 +24,23 @@ A solução foi estruturada seguindo padrões corporativos de QA, priorizando cl
 ---
 
 ## **📁 Estrutura do Projeto**
-
 banco-api-testes/
 ├── test/
 │   └── transferencia.test.js         
 │
 ├── fixtures/
-│   └── postTransferencias.json      
+│   └── postTransferencias.json        
 │
 ├── helpers/
 │   └── autenticacao.js               
 │
-├── mochawesome-report/               
+├── mochawesome-report/                
 │
 ├── package.json
 ├── .gitignore
 └── README.md
+
+
 
 Código
 
