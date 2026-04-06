@@ -27,15 +27,15 @@ A solução foi estruturada seguindo padrões corporativos de QA, priorizando cl
 
 banco-api-testes/
 ├── test/
-│   └── transferencia.test.js          # Testes de transferência bancária
+│   └── transferencia.test.js         
 │
 ├── fixtures/
-│   └── postTransferencias.json        # Massa de dados para POST
+│   └── postTransferencias.json      
 │
 ├── helpers/
-│   └── autenticacao.js                # Função para obter token JWT
+│   └── autenticacao.js               
 │
-├── mochawesome-report/                # Relatórios gerados automaticamente
+├── mochawesome-report/               
 │
 ├── package.json
 ├── .gitignore
