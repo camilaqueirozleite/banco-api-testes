@@ -5,14 +5,14 @@
 ![Mochawesome](https://img.shields.io/badge/report-Mochawesome-purple)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-## **🎯 Objetivo do Projeto**
+## ** Objetivo do Projeto**
 
 Este projeto tem como finalidade assegurar a qualidade da **API Banco** por meio de testes automatizados, garantindo que funcionalidades críticas — como criação de transferências, autenticação e paginação — operem de forma consistente, segura e previsível.  
 A solução foi estruturada seguindo padrões corporativos de QA, priorizando clareza, organização e escalabilidade.
 
 ---
 
-## **🧰 Stack Utilizada**
+## ** Stack Utilizada**
 
 - **Node.js** – Ambiente de execução  
 - **Mocha** – Framework de testes  
@@ -23,7 +23,7 @@ A solução foi estruturada seguindo padrões corporativos de QA, priorizando cl
 
 ---
 
-## **📁 Estrutura do Projeto**
+## ** Estrutura do Projeto**
 banco-api-testes/
 
 ├── test/
@@ -48,7 +48,7 @@ Código
 
 ---
 
-## **⚙️ Configuração do Ambiente**
+## ** Configuração do Ambiente**
 
 ### **1. Instalar dependências**
 
@@ -59,12 +59,12 @@ Código
 BASE_URL=http://localhost:3000
 Ajuste conforme o endereço da sua API.
 
-🧪 Execução dos Testes
+ Execução dos Testes
 bash
 npm test
 Os testes validarão os principais fluxos da API, retornando logs detalhados no terminal.
 
-📊 Geração do Relatório Mochawesome
+ Geração do Relatório Mochawesome
 Após rodar os testes:
 
 bash
@@ -75,7 +75,7 @@ Código
 /mochawesome-report/mochawesome.html
 Abra o arquivo no navegador para visualizar métricas, gráficos e resultados consolidados.
 
-📝 Cenários de Teste Implementados
+ Cenários de Teste Implementados
 
 ✔ POST /transferencias
 Criação de transferência válida
@@ -96,6 +96,6 @@ Retorno de 10 registros
 
 Status 200
 
-👩‍💻 Autora
+ Autora
 Camila Leite  
 Quality Assurance | Testes Automatizados | API Testing
