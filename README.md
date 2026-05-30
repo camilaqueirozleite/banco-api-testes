@@ -23,79 +23,73 @@ A solução foi estruturada seguindo padrões corporativos de QA, priorizando cl
 
 ---
 
-## ** Estrutura do Projeto**
-banco-api-testes/
+## 📁 Estrutura do Projeto
 
+```text
+banco-api-testes/
+│
 ├── test/
 │   └── transferencia.test.js
-
+│
 ├── fixtures/
 │   └── postTransferencias.json
-
+│
 ├── helpers/
 │   └── autenticacao.js
-
+│
 ├── mochawesome-report/
 │
 ├── package.json
 ├── .gitignore
 └── README.md
-
-
-
-
-Código
+```
 
 ---
 
-## ** Configuração do Ambiente**
+## ⚙️ Configuração do Ambiente
 
-### **1. Instalar dependências**
+### 1. Instalar dependências
 
 ```bash
 npm install
-2. Criar arquivo .env
-Código
+```
+
+### 2. Criar arquivo `.env`
+
+```env
 BASE_URL=http://localhost:3000
-Ajuste conforme o endereço da sua API.
+```
 
- Execução dos Testes
-bash
+Ajuste o valor conforme o endereço da sua API.
+
+---
+
+## ▶️ Execução dos Testes
+
+Executar todos os testes:
+
+```bash
 npm test
-Os testes validarão os principais fluxos da API, retornando logs detalhados no terminal.
+```
 
- Geração do Relatório Mochawesome
-Após rodar os testes:
+Executar um teste específico:
 
-bash
-npm run report
-O relatório será gerado em:
+```bash
+npx mocha test/transferencia.test.js
+```
 
-Código
-/mochawesome-report/mochawesome.html
-Abra o arquivo no navegador para visualizar métricas, gráficos e resultados consolidados.
+---
 
- Cenários de Teste Implementados
+## 📊 Relatórios
 
-✔ POST /transferencias
-Criação de transferência válida
+Gerar relatório Mochawesome:
 
-Validação de valor mínimo
+```bash
+npm test
+```
 
-Retorno de erro 422 para valores inválidos
+Após a execução, o relatório estará disponível em:
 
-✔ GET /transferencias/:id
-Retorno correto dos dados da transferência
-
-Validação de campos essenciais
-
-✔ GET /transferencias?page=1&limit=10
-Validação da paginação
-
-Retorno de 10 registros
-
-Status 200
-
- Autora
-Camila Leite  
-Quality Assurance | Testes Automatizados | API Testing
+```text
+mochawesome-report/
+```
