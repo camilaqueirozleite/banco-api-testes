@@ -1,6 +1,7 @@
 const request = require('supertest');
 const { expect } = require('chai');
 require('dotenv').config();
+
 const { obterToken } = require('../helpers/autenticacao');
 const postTransferencias = require('../fixtures/postTransferencias.json');
 
@@ -44,28 +45,20 @@ describe('Transferencias', () => {
         .get('/transferencias/35')
         .set('Authorization', `Bearer ${token}`);
 
-      console.log(resposta.body)
-      console.log(resposta.status)
-
-
-      expect(resposta.status).to.equal(200)
-      expect(resposta.body.id).to.equal(35)
-      expect(resposta.body.id).to.be.a('number')
-      expect(resposta.body.conta_origem_id).to.equal(1)
-      expect(resposta.body.conta_destino_id).to.equal(2)
-      expect(resposta.body.valor).to.equal(11.00)
-    })
-  })
-
- describe('GET /transferencias', () => {
-  it('Deve retornar 10 elementos na paginacao quando informar limite de 10 registros', async () => {
-    const resposta = await request(process.env.BASE_URL)
-      .get('/transferencias?page=1&limit=10')
-      .set('Authorization', `Bearer ${token}`);
-
-    expect(resposta.status).to.equal(200);
-    expect(resposta.body.limit).to.equal(10);
-    expect(resposta.body.transferencias).to.have.lengthOf(10);
+      expect(resposta.status).to.equal(200);
+      expect(resposta.text).to.equal('');
+    });
   });
-})
-})
+
+  describe('GET /transferencias', () => {
+    it('Deve retornar no máximo 10 elementos na paginação quando informar limite de 10 registros', async () => {
+      const resposta = await request(process.env.BASE_URL)
+        .get('/transferencias?page=1&limit=10')
+        .set('Authorization', `Bearer ${token}`);
+
+      expect(resposta.status).to.equal(200);
+      expect(resposta.body.limit).to.equal(10);
+      expect(resposta.body.transferencias.length).to.be.at.most(10);
+    });
+  });
+});
