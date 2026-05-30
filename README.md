@@ -126,8 +126,11 @@ https://www.linkedin.com/in/camilaqueirozleite/
 GitHub:
 https://github.com/camilaqueirozleite
 
-Após a execução, o relatório estará disponível em:
 
-```text
-mochawesome-report/
-```
+## Execução dos Testes
+
+![Execução dos Testes](test/docs/terminal-tests.png)
+
+## Relatório Mochawesome
+
+![Relatório Mochawesome](test/docs/mochawesome-report.png)
