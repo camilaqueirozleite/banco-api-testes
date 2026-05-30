@@ -87,6 +87,44 @@ Gerar relatório Mochawesome:
 ```bash
 npm test
 ```
+---
+
+## 🧪 Casos de Teste Cobertos
+
+Este projeto valida os principais fluxos da API bancária:
+
+- Criação de transferência com sucesso
+- Validação de autenticação
+- Validação de campos obrigatórios
+- Tratamento de respostas de erro
+- Validação de códigos HTTP
+- Verificação da estrutura da resposta
+
+---
+
+## ✅ Boas Práticas Aplicadas
+
+- Organização do projeto por responsabilidades
+- Utilização de fixtures para dados de teste
+- Reutilização de código através de helpers
+- Separação entre dados, autenticação e testes
+- Geração automática de relatórios com Mochawesome
+- Versionamento com Git e GitHub
+
+---
+
+## 👩‍💻 Autor
+
+Camila Leite
+
+- Transição de carreira de Farmacêutica para Quality Assurance
+- Projeto desenvolvido para estudo de Testes de API com Node.js
+
+LinkedIn:
+https://www.linkedin.com/in/camilaqueirozleite/
+
+GitHub:
+https://github.com/camilaqueirozleite
 
 Após a execução, o relatório estará disponível em:
 
