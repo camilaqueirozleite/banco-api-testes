@@ -5,14 +5,14 @@
 ![Mochawesome](https://img.shields.io/badge/report-Mochawesome-purple)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-## ** Objetivo do Projeto**
+##  Objetivo do Projeto
 
 Este projeto tem como finalidade assegurar a qualidade da **API Banco** por meio de testes automatizados, garantindo que funcionalidades críticas — como criação de transferências, autenticação e paginação — operem de forma consistente, segura e previsível.  
 A solução foi estruturada seguindo padrões corporativos de QA, priorizando clareza, organização e escalabilidade.
 
 ---
 
-## ** Stack Utilizada**
+##  Stack Utilizada
 
 - **Node.js** – Ambiente de execução  
 - **Mocha** – Framework de testes  
@@ -23,7 +23,7 @@ A solução foi estruturada seguindo padrões corporativos de QA, priorizando cl
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```text
 banco-api-testes/
@@ -46,7 +46,7 @@ banco-api-testes/
 
 ---
 
-## ⚙️ Configuração do Ambiente
+##  Configuração do Ambiente
 
 ### 1. Instalar dependências
 
@@ -64,7 +64,7 @@ Ajuste o valor conforme o endereço da sua API.
 
 ---
 
-## ▶️ Execução dos Testes
+##  Execução dos Testes
 
 Executar todos os testes:
 
@@ -80,7 +80,7 @@ npx mocha test/transferencia.test.js
 
 ---
 
-## 📊 Relatórios
+##  Relatórios
 
 Gerar relatório Mochawesome:
 
@@ -89,7 +89,7 @@ npm test
 ```
 ---
 
-## 🧪 Casos de Teste Cobertos
+##  Casos de Teste Cobertos
 
 Este projeto valida os principais fluxos da API bancária:
 
@@ -102,7 +102,7 @@ Este projeto valida os principais fluxos da API bancária:
 
 ---
 
-## ✅ Boas Práticas Aplicadas
+##  Boas Práticas Aplicadas
 
 - Organização do projeto por responsabilidades
 - Utilização de fixtures para dados de teste
@@ -113,7 +113,7 @@ Este projeto valida os principais fluxos da API bancária:
 
 ---
 
-## 👩‍💻 Autor
+##  Autor
 
 Camila Leite
 
